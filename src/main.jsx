@@ -13,15 +13,13 @@ import ReactDOM from 'react-dom/client'
 // import { Padre } from './07-tarea-memo/Padre'
 // import { HooksApp } from './HooksApp'
 // import './08-useReducer/intro-reducer'
-import { TodoApp } from './08-useReducer/TodoApp'
+// import { TodoApp } from './08-useReducer/TodoApp'
+import { BrowserRouter } from "react-router-dom";
+import { MainApp } from './09-useContext/MainApp'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
-    // <MultipleCustomHooks />
-    // <FocusScreen />
-    // <MemoHook/>
-        // <CallbackHook/>
-        // <Padre/>
-        <TodoApp />
+        <BrowserRouter>
+            <MainApp/>
+        </BrowserRouter>
 )
